@@ -1,6 +1,6 @@
 # aitoolsblocklist-go
 
-Go module for recognising AI tools by domain. Network software written in Go (proxies, DNS forwarders, egress gateways, log processors) can call `Check` and learn whether a hostname belongs to an AI product, what category it falls in, and what the vendor says about training on customer input. The answers come from [a domain lookup that knows 20,000+ AI tools](https://www.aitoolsblocklist.com), maintained and reclassified daily.
+Go module for recognising AI tools by domain. Network software written in Go (proxies, DNS forwarders, egress gateways, log processors) can call `Check` and learn whether a hostname belongs to an AI product, what category it falls in, and what the vendor says about training on customer input. The same data powers [DNS filtering with AI threat protection](https://www.aitoolsblocklist.com/ai-domains-blocklist-dns.php), refreshed daily.
 
 ```bash
 go get github.com/explainableaixai/aitoolsblocklist-go
@@ -171,9 +171,9 @@ The module's own test does the same, and checks that the `Accept: application/js
 
 ## Related services
 
-- Before choosing rules, run [an AI usage audit built from firewall exports](https://www.shadowaitools.com) to see which tools are already in use.
-- Autonomous agents need a different kind of control: [which pages an agent may act on](https://www.aiagentallowlist.com).
-- For [full web filtering categories beyond AI](https://www.webfilteringdatabase.com), load the general filtering database alongside this one.
+- Before choosing rules, run [a free shadow AI audit](https://www.shadowaitools.com/free-shadow-ai-audit.php) on your firewall exports to see which tools are already in use.
+- Autonomous agents need a different kind of control: an [AI agent allow list of page types](https://www.aiagentallowlist.com/page-types-database.php).
+- For [enterprise web filtering data](https://www.webfilteringdatabase.com) beyond AI, load the general filtering database alongside this one.
 
 ## Deploying behind a corporate proxy
 
