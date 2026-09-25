@@ -1,6 +1,6 @@
 # aitoolsblocklist-go
 
-Go module for recognising AI tools by domain. Network software written in Go (proxies, DNS forwarders, egress gateways, log processors) can call `Check` and learn whether a hostname belongs to an AI product, what category it falls in, and what the vendor says about training on customer input. The same data powers [DNS filtering with AI threat protection](https://www.aitoolsblocklist.com), refreshed daily.
+Go module for recognising AI tools by domain. Network software written in Go (proxies, DNS forwarders, egress gateways, log processors) can call `Check` and learn whether a hostname belongs to an AI product, what category it falls in, and what the vendor says about training on customer input. The same data powers [DNS filtering with AI threat protection](https://www.aitoolsblocklist.com/ai-domains-blocklist-dns.php), refreshed daily.
 
 ```bash
 go get github.com/explainableaixai/aitoolsblocklist-go
